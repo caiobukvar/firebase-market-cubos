@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Routes from './routes';
 
 import './styles.css';
+import './plugins/analytics';
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
@@ -24,6 +25,6 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <Routes />
     </ThemeProvider>
-  </React.StrictMode>,  
+  </React.StrictMode>,
   document.getElementById('root')
 );
